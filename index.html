@@ -2,13 +2,38 @@
 <html>
     <head>
         <title>Michael Plante</title>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/js/scripts.js"></script>
     </head>
     <body>
-        I code things
-        <ul>
-            <li>
-                <a href="/CSDC">CSDC Song Book</a>
-            </li>
-        </ul>
+        <div id="topBar">
+            <h1>Projects</h1>
+        </div>
+        <div id="sidebar">
+            <div id="logoBox">
+                <a href="."><img src="/images/logo.png"></a>
+            </div>
+            <div id="Projects" class="tab selectedTab">
+                <img class="icon activeIcon" src="images/projects_white.png">
+                <img class="icon inactiveIcon" src="images/projects_gray.png">
+                PROJECTS
+            </div>
+            <div id="About Me" class="tab">
+                <img class="icon activeIcon" src="images/about_white.png">
+                <img class="icon inactiveIcon" src="images/about_gray.png">
+                ABOUT ME
+            </div>
+            <div id="Site Info" class="tab">
+                <img class="icon activeIcon" src="images/info_white.png">
+                <img class="icon inactiveIcon" src="images/info_gray.png">
+                SITE INFO
+            </div>
+        </div>
+        <div id="contentWrapper">
+            <div id="contentView">
+                <div id="contentBubble"></div>
+            </div>
+        </div>
     </body>
 </html>
