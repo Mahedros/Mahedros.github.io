@@ -3,14 +3,16 @@ html, body {
     height: 100%;
 }
 
-body
-{
+body {
 	margin: 0px;
 	font-family: Helvetica, Sans-Serif;
 }
 
-#topBar
-{
+p {
+    padding-left: 10px;
+}
+
+#topBar {
 	height: 88px;
 	text-align:center;
 	border-bottom: 1px solid rgb(215,215,215);
@@ -18,8 +20,7 @@ body
 	padding-top: 10px;
 }
 
-#topBar h1
-{
+#topBar h1 {
 	position:absolute;
 	text-align:left;
 	padding-left: 30px;
@@ -28,8 +29,7 @@ body
 	color: rgb(129,129,129);
 }
 
-#sidebar
-{
+#sidebar {
 	margin-top: -99px;
 	width: 140px;
 	float:left;
@@ -41,8 +41,7 @@ body
     max-height: 98px;
 }
 
-.tab
-{
+.tab {
 	width: 140px;
 	color: rgb(160,160,160);
 	text-align:center;
@@ -52,19 +51,16 @@ body
     position: relative;
 }
 
-.tab.selectedTab, .tab:hover
-{
+.tab.selectedTab, .tab:hover {
 	background-color: rgb(0,45,120);
 	color: rgb(255,255,255);
 }
 
-.tab img
-{
+.tab img {
 	display:block;
 }
 
-#contentWrapper
-{
+#contentWrapper {
 	position:absolute;
 	top:0;
 	height: calc(100% - 99px);
@@ -74,8 +70,7 @@ body
 	margin-top: 99px;
 }
 
-#contentView
-{
+#contentView {
 	margin-top: 20px;
 	max-height: calc(100% - 60px); /* JUST FOR SHOW */
 	overflow-y: auto;
@@ -85,8 +80,7 @@ body
 	padding-right: 30px;
 }
 
-#contentView > div
-{
+#contentView > div {
 	background-color: white;
 	border-radius: 8px;
 	border: 1px solid rgb(215,215,215);
@@ -94,8 +88,7 @@ body
 	margin-bottom: 20px;
 }
 
-.selectedTab:after
-{
+.selectedTab:after {
 	content: '';
 	position:absolute;
     top: calc(50% - 10px);
@@ -107,44 +100,37 @@ body
 	border-width: 10px;
 }
 
-.hidden
-{
+.hidden {
 	display: none !important
 }
 
-#contentTopBar
-{
+#contentTopBar {
 	min-height: 20px;
 }
 
-#leftContentOptions
-{
+#leftContentOptions {
 	display: inline-block;
 	float: left;
 }
 
-#rightContentOptions
-{
+#rightContentOptions {
 	display: inline-block;
 	float: right;
 }
 
-#leftContentOptions div, #leftContentOptions select, #rightContentOptions div
-{
+#leftContentOptions div, #leftContentOptions select, #rightContentOptions div {
 	display: inline-block;
 	padding: 5px;
 	color: rgb(0,45,120);
 	border-radius: 5px;
 }
 
-#leftContentOptions div, #rightContentOptions div
-{
+#leftContentOptions div, #rightContentOptions div {
 	background-color: rgb(0,45,120);
 	color: rgb(255,255,255);
 }
 
-.icon
-{
+.icon {
     width: 50px;
     height: 50px;
     margin-left: auto;
@@ -154,12 +140,10 @@ body
 .selectedTab .inactiveIcon,
 .tab:hover .inactiveIcon,
 :not(.selectedTab) > .activeIcon,
-:not(.selectedTab):hover > .inactiveIcon
-{
+:not(.selectedTab):hover > .inactiveIcon {
     display: none;
 }
 
-:not(.selectedTab).tab:hover > .activeIcon
-{
+:not(.selectedTab).tab:hover > .activeIcon {
     display:block;
 }
