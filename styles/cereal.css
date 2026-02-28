@@ -1,3 +1,7 @@
 .entry {
     cursor: pointer;
 }
+
+li {
+    padding-top: 5px;
+}
